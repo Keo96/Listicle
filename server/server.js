@@ -1,4 +1,5 @@
 import express from 'express';
+import './config/dotenv.js';
 import villainRouter from './routes/villains.js';
 
 const app = express();

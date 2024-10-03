@@ -18,6 +18,17 @@ headerLeft.appendChild(headerTitle)
 const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
 
+const searchForm = document.createElement('form')
+searchForm.id = 'search-form'
+
+const searchInput = document.createElement('input')
+searchInput.type = 'text'
+searchInput.id = 'search-input'
+searchInput.placeholder = 'Search for a villain by name...'
+searchForm.appendChild(searchInput)
+
+headerRight.appendChild(searchForm)
+
 const headerButton = document.createElement('a')
 headerButton.textContent = 'All Villains'  
 headerButton.setAttribute('role', 'button')
